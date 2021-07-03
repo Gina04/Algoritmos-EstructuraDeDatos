@@ -1,0 +1,2 @@
+# Algoritmos-EstructuraDeDatos
+Paradigma imperativo 
