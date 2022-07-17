@@ -23,7 +23,7 @@ Nodo* insertarOrdenado(Nodo*&lista, t_struct x){
 	nuevo_nodo->info = x; 
 	nuevo_nodo->sgte = NULL; 
 	
-	if(lista==NULL && lista->info.legajo > x.legajo){ // si no hay nodos en la lista y es menor
+	if(lista==NULL || lista->info.legajo > x.legajo){ // si no hay nodos en la lista y es menor
 		nuevo_nodo->sgte = lista; //la lista apunta al nuevo nodo
 		lista = nuevo_nodo;       // lista recibe la direccion de memoria nuevo nodo osea
 		                          // ahora esta lista apuntando a nuevo nodo.
